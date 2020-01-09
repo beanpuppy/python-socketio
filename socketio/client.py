@@ -25,7 +25,7 @@ def signal_handler(sig, frame):  # pragma: no cover
     return original_signal_handler(sig, frame)
 
 
-original_signal_handler = signal.signal(signal.SIGINT, signal_handler)
+original_signal_handler = None
 
 
 class Client(object):
